@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>How to Create Page Layout pure javascript</title>
+        <style>
+
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body id="d_body">
+        
+
+        <script>
+            // 1. Create a header element/tag using JS
+            var h = document.createElement('header');
+            h.innerHTML = 'Header';
+            // console.log(h);
+
+            // 2. Now tell the JS to place this header element/tag inside body tag
+            document.getElementById('d_body').append(h);
+            document.querySelector('header').setAttribute('claaa','d_header');
+            // object.method
+            document.body.style.margin = '0px';
+            document.body.style.overflowX = 'hidden';
+
+            var x = document.querySelectorAll('header');
+            // console.log(x[0]);
+            x[0].style.height = '140px';
+            x[0].style.width = '100%';
+            x[0].style.border = '6px solid #ddd';
+            x[0].style.color = 'green';
+            x[0].style.fontSize = '40px';
+            x[0].style.textAlign = 'center';
+            x[0].style.lineHeight = '140px';
+            // nav section start
+            let n = document.createElement('nav');
+            n.innerHTML = 'Navigation';
+            // console.log(n)
+
+            document.getElementById('d_body').append(n);
+            document.querySelector('nav').setAttribute('class','d_nav');
+            var y = document.querySelectorAll('nav');
+            // console.log(y[0]);
+            y[0].style.width = '100%';
+            y[0].style.height = '120px';
+            y[0].style.border = '5px solid #ddd';
+            y[0].style.color = 'green';
+            y[0].style.fontSize = '30px';
+            y[0].style.textAlign = 'center';
+            y[0].style.lineHeight = '120px';
+            // nav section end
+            //leftAside Section start
+            let m = document.createElement('aside');
+            m.innerHTML = 'Left Aside';
+            // console.log(m);
+            document.getElementById('d_body').append(m);
+            document.querySelector('aside').setAttribute('class','d_lft');
+            let a = document.getElementsByClassName('d_lft');
+            console.log(a[0]);
+            a[0].style.width = '24%';
+            a[0].style.height = '400px';
+            a[0].style.border = '6px solid #ddd';
+            a[0].style.margin = '6px';
+            a[0].style.float = 'left';
+
+            let a1 = document.getElementsByTagName('aside');
+            a[0].style.color = 'green';
+            a[0].style.textAlign = 'center';
+            a[0].style.fontSize = '38px';
+            a[0].style.lineHeight = '400px';
+            //LeftAside Section end
+            //Section Area start
+            let c = document.createElement('section');
+            c.innerHTML = 'Main Section';
+            // console.log(m);
+            document.getElementById('d_body').append(c);
+            document.querySelector('section').setAttribute('class','d_mainsection');
+            let c1 = document.getElementsByTagName('section');
+            // console.log(c[0]);
+            c1[0].style.width = '50%';
+            c1[0].style.height = '400px';
+            c1[0].style.border = '6px solid #ddd';
+            c1[0].style.margin = '6px';
+            c1[0].style.float = 'left';
+
+            
+            c1[0].style.color = 'green';
+            c1[0].style.textAlign = 'center';
+            c1[0].style.fontSize = '38px';
+            c1[0].style.lineHeight = '400px';
+            //Section Area end
+
+            //leftAside Section start
+            let s = document.createElement('aside');
+            s.innerHTML = 'Right Aside';
+            // console.log(m);
+            document.getElementById('d_body').append(s);
+            document.querySelector('aside').setAttribute('class','d_rht');
+            let s2 = document.getElementsByClassName('d_rht');
+            console.log(s2[0]);
+            s2[0].style.width = '23%';
+            s2[0].style.height = '400px';
+            s2[0].style.border = '6px solid #ddd';
+            s2[0].style.margin = '6px';
+            s2[0].style.float = 'left';
+
+            let s1 = document.getElementsByTagName('aside');
+            s1[0].style.color = 'green';
+            s1[0].style.textAlign = 'center';
+            s1[0].style.fontSize = '38px';
+            s1[0].style.lineHeight = '400px';
+            //LeftAside Section end
+
+            // // Right aside
+            // var r = document.createElement('aside');
+            // r.innerHTML = 'Right Aside';
+            // console.log(r);
+            // document.getElementById('d_body').append(r);
+            // document.querySelector('aside').setAttribute('class','d_rht');
+            // var r1 = document.querySelectorAll('aside');
+            // // console.log(r1[0]);
+            // r1[0].style.width = '24%';
+            // r1[0].style.height = '400px';
+            // r1[0].style.border = '6px solid #ddd';
+            // r1[0].style.margin = '6px';
+            // // Right aside
+            
+            // footer area start
+            var f = document.createElement('footer');
+            f.innerHTML = 'Footer';
+            // console.log(f);
+            document.getElementById('d_body').append(f);
+            document.querySelector('footer').setAttribute('class','d_foot');
+            var f = document.getElementsByClassName('d_foot');
+            console.log(f[0]);
+            f[0].style.width = '100%';
+            f[0].style.height = '130px';
+            f[0].style.border = '5px solid #ddd';
+            f[0].style.float = 'left';
+            f[0].style.color = 'green';
+            f[0].style.textAlign = 'center';
+            f[0].style.fontSize = '40px';
+            f[0].style.lineHeight = '130px';
+            // footer area end
+        </script>
+    </body>
+</html>
